@@ -1,4 +1,4 @@
-from distutils.core import setup
+from setuptools import setup, find_packages
 
 setup(
     name='Shopify Install',
@@ -7,5 +7,6 @@ setup(
     author='Igor Sobreira',
     author_email='igor@igorsobreira.com',
     url='https://github.com/igorsobreira/shopify_install',
-    packages=['shopify_install', 'shopify_install.migrations'],
+    packages=find_packages(),
+    install_requires=['requests'],
 )
